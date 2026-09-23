@@ -1,0 +1,40 @@
+{
+    "name": "resend",
+    "description": "The official Resend app for Attio, built with the Attio App SDK",
+    "private": true,
+    "version": "0.0.1",
+    "scripts": {
+        "attio": "attio",
+        "dev": "attio dev",
+        "build": "attio build",
+        "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+        "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+        "clean": "rm -rf lib && rm -rf dist",
+        "lint": "eslint \"src/**/*.{ts,tsx}\"",
+        "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+        "typecheck": "tsc --noEmit",
+        "knip": "knip --no-config-hints",
+        "test": "vitest run",
+        "test:watch": "vitest"
+    },
+    "devDependencies": {
+        "@types/node": "^24.13.3",
+        "@types/react": "19.2.14",
+        "@typescript-eslint/eslint-plugin": "^8.69.0",
+        "@typescript-eslint/parser": "^8.69.0",
+        "eslint": "^9.39.5",
+        "knip": "^6.34.0",
+        "prettier": "^3.9.6",
+        "typescript": "5.8.3",
+        "vite": "^8.2.2",
+        "vitest": "^4.1.11"
+    },
+    "dependencies": {
+        "@attio/fetchable": "0.0.1-experimental.9",
+        "attio": "1.0.3",
+        "match-sorter": "8.0.3",
+        "react": "19.1.0",
+        "resend": "6.20.0"
+    },
+    "packageManager": "pnpm@10.33.3"
+}

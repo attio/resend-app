@@ -1,0 +1,10 @@
+query GetPersonForSegment($recordId: String!) {
+  person(id: $recordId) {
+    email_addresses
+    name {
+      first_name
+      last_name
+      full_name
+    }
+  }
+}
